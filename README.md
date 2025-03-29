@@ -46,7 +46,31 @@ A,W,S,D - more around
 
 Q,Z - zoom in, zoom out
 
-1,2,3,4,5,6,7,8,9,0 - cycle patterns
+V,B - cycle patterns; some of the larger patterns are commented out in main.cpp, i don't know how bad your graphics card is, if you have a decent graphics card, feel free to uncomment, but you have to increase the grid size
+
+```
+main.cpp
+ 32 int resolution = 10; -> int resolution = 30; (ish)
+ 614 Palette * palette = new Palette();
+ 615 palette->add("Gosper_gun");
+ 616 palette->add("stopper");
+ 617 palette->add("and");
+ 618 palette->add("or");
+ 619 palette->add("xor");
+ 620 palette->add("nor");
+ 621 palette->add("not");
+ 622 palette->add("reflector");
+ 623 palette->add("trail");
+ 624 palette->add("60p_gun",60);
+ 625 palette->add("buckaroo",30);                                                                                                                                                                           
+ 626 palette->add("gliderduplicator1");
+ 627 palette->add("bifurcation");
+ 628 //palette->add("adder"); -> uncomment here
+ 629 //palette->add("metapixel"); -> uncomment here
+ // if you want to add more patterns, this is where you would have to do it
+```
+
+1,2,3,4,5,6,7,8,9,0 - cycle through pattern versions
 
 1,2 - tranditionally to cycle phase of pattern, which is important for some glider creators and reflectors
 
