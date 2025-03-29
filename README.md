@@ -48,6 +48,14 @@ Q,Z - zoom in, zoom out
 
 1,2,3,4,5,6,7,8,9,0 - cycle patterns
 
+1,2 - tranditionally to cycle phase of pattern, which is important for some glider creators and reflectors
+
+9,0 - rotate
+
+7,8 - flip, change pattern, etc...
+
+3,4,5,6 - up to you, just add some png files to patterns directory, only red component actually gets simulated, green, blue are for comments, follow file name convention, ex: pattern-I-J-K-L.png, note that all indices are in range [0,N) 
+
 I,J,K,L - drag pattern around
 
 T,Y - change drag step size
