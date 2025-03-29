@@ -1,6 +1,8 @@
 make sure your graphics drivers are up to date
 on linux, you can run nvidia-smi, it should give you something like
-nvidia-smi     
+
+```
+nvidia-smi   
 +-----------------------------------------------------------------------------------------+
 | NVIDIA-SMI 560.35.03              Driver Version: 560.35.03      CUDA Version: 12.6     |
 |-----------------------------------------+------------------------+----------------------+
@@ -21,26 +23,35 @@ nvidia-smi
 |    0   N/A  N/A      1808      G   /usr/lib/xorg/Xorg                            155MiB |
 |    0   N/A  N/A      1965      G   /usr/bin/gnome-shell                           45MiB |
 +-----------------------------------------------------------------------------------------+
-
+```
 
 if you don't have nvidia graphics card, it might still work, i have tested it with intel graphics card, it worked but was slow
 might work on windows, you would have to figure out cygwin or visual studio though 
 mac os, definitely won't work, this code uses compute shaders, which are from OpenGL 4.3, mac os doesn't support anything above OpenGL 4.1, I'm too lazy to figure out a vulkan implemenation that runs on mac os as well 
 
 then type make
+
+```
 make
 g++ -O3 -g0 glad.c main.cpp -lglfw -I. -o shader_test
+```
 
 it should generate a file ./shader_test
+
 run it in terminal
 
 useful controls:
+
 A,W,S,D - more around
+
 Q,Z - zoom in, zoom out
 
 1,2,3,4,5,6,7,8,9,0 - cycle patterns
+
 I,J,K,L - drag pattern around
+
 T,Y - change drag step size
+
 O,P - speed up, slow down simulation
 
 Warning: might seg fault, still debugging :-) 
