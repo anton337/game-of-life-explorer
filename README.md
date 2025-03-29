@@ -25,9 +25,9 @@ nvidia-smi
 +-----------------------------------------------------------------------------------------+
 ```
 
-if you don't have nvidia graphics card, it might still work, i have tested it with intel graphics card, it worked but was slow
-might work on windows, you would have to figure out cygwin or visual studio though 
-mac os, definitely won't work, this code uses compute shaders, which are from OpenGL 4.3, mac os doesn't support anything above OpenGL 4.1, I'm too lazy to figure out a vulkan implemenation that runs on mac os as well 
+if you don't have nvidia graphics card, it might still work, i have tested it with intel graphics card, it worked but was slow. 
+might work on windows, you would have to figure out cygwin or visual studio though. 
+mac os, definitely won't work, this code uses compute shaders, which are from OpenGL 4.3, mac os doesn't support anything above OpenGL 4.1, I'm too lazy to figure out a vulkan implemenation that runs on mac os as well. 
 
 then type make
 
@@ -53,6 +53,14 @@ I,J,K,L - drag pattern around
 T,Y - change drag step size
 
 O,P - speed up, slow down simulation
+
+ENTER - place pattern
+
+N,M - unto, redo placement
+
+SPACE - supposed to make a png file from current screen, might not work - work in progress, probably don't mess with it for now
+
+ESC - exit
 
 Warning: might seg fault, still debugging :-) 
 
